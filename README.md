@@ -5,7 +5,7 @@
 
 ## License
 
-99.9999% of this library being made of words from the thesaurus data, see LICENSE.txt
+99.9999% of this library being made of words from MyThes, the open-office thesaurus, see the LICENSE.txt at the root of the project.
 
 ## Usage
 
