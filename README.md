@@ -47,7 +47,10 @@ expect a th_en_US_new.dat that you can get at http://lingucomponent.openoffice.o
 
 ```Javascript
 var thesaurus = require("thesaurus");
+
+// import the file, add (or update) the words
 var updated_thesaurus = thesaurus.load("./th_en_US_new.dat");
-# TODO you can't save it yet.. but you can export the resulting JSON using:
+
+// TODO you can't save it yet.. but you can export the resulting JSON using:
 console.log(updated_thesaurus.toJson());
 ```
