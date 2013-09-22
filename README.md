@@ -13,22 +13,32 @@
 
 ```Javascript
 var thesaurus = require("thesaurus");
-console.log(thesaurus.find("cheese"));
-// returns a list of words:
-[ 'dairy product',
-  'food',
-  'tall mallow',
-  'high mallow',
-  'cheeseflower',
-  'Malva sylvestris',
-  'mallow',
-  'discontinue',
-  'stop',
-  'cease',
-  'give up',
-  'quit',
-  'lay off',
-  'spool' ]
+
+// basically returns a list of similar words
+console.log(thesaurus.find("structuralism"));
+[ 'structural linguistics',
+  'linguistics',
+  'structural anthropology',
+  'theory',
+  'structural sociology' ]
+
+// please be aware that all meanings are merged into the same list.
+// this is not a semantic thesaurus.
+console.log(thesaurus.find("constitutional"));
+[ 'law',
+  'property',
+  'constitutional',
+  'built-in',
+  'inbuilt',
+  'inherent',
+  'integral',
+  'intrinsic',
+  'intrinsical',
+  'constituent',
+  'constitutive',
+  'organic',
+  'essential',
+  'walk' ]
 ```
 
 ### Import an OpenOffice thesaurus file
