@@ -23,7 +23,10 @@ class Thesaurus
           continue if syn in @database[current.word]
           @database[current.word].push syn 
     @
-  
+  reset: -> @database = []
+  replace: (inputFile) ->
+    reset()
+    load(inputFile)
   find: (key) -> @database[key] ? []
   get: -> @database
   toJson: -> JSON.stringify @database, undefined, 2
