@@ -25,8 +25,8 @@ class Thesaurus
     @
   reset: -> @database = []
   replace: (inputFile) ->
-    reset()
-    load(inputFile)
+    this.reset()
+    this.load(inputFile)
   find: (key) -> @database[key] ? []
   get: -> @database
   toJson: -> JSON.stringify @database, undefined, 2
