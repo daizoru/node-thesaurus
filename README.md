@@ -1,7 +1,7 @@
 
 # Thesaurus
 
-*a thesaurus of english words*
+*a thesaurus of any languages using LibreOffice's dictionaries*
 
 ## License
 
