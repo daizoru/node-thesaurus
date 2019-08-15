@@ -54,9 +54,9 @@ var updated_thesaurus = thesaurus.load("./th_en_US_new.dat");
 // TODO you can't save it yet.. but you can export the resulting JSON using:
 console.log(updated_thesaurus.toJson());
 
-// reset internal DB
+// to clear the internal dictionary
 thesaurus.reset()
 
-// replace already loaded dictionary by a new one(reset and load) 
+// to replace the loaded dictionary by one loaded from the given thesaurus dat file.(reset and load) 
 thesaurus.replace("./th_en_US_new.dat")
 ```
