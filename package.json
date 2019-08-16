@@ -19,8 +19,7 @@
   },
   "main": "./lib/thesaurus.js",
   "licence": "./LICENSE.txt",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "coffee-script": "~1.6.3",
     "mocha": "1.7.x",

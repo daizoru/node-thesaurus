@@ -1,7 +1,7 @@
 
 # Thesaurus
 
-*a thesaurus of english words*
+*a thesaurus of any languages using LibreOffice's dictionaries*
 
 ## License
 
@@ -48,9 +48,15 @@ expect a th_en_US_new.dat that you can get at http://lingucomponent.openoffice.o
 ```Javascript
 var thesaurus = require("thesaurus");
 
-// import the file, add (or update) the words
+// import the file, add (or update) the words. This function extends the preloaded English Thesaurus Dictionary. For using the loaded one only, use "replace" function instead.
 var updated_thesaurus = thesaurus.load("./th_en_US_new.dat");
 
 // TODO you can't save it yet.. but you can export the resulting JSON using:
 console.log(updated_thesaurus.toJson());
+
+// to clear the internal dictionary
+thesaurus.reset()
+
+// to replace the loaded dictionary by one loaded from the given thesaurus dat file.(reset and load) 
+thesaurus.replace("./th_en_US_new.dat")
 ```
