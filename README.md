@@ -41,10 +41,14 @@ console.log(thesaurus.find("constitutional"));
   'walk' ]
 ```
 
-### Import an OpenOffice thesaurus file
+### Download and Import an OpenOffice thesaurus file
 
-expect a th_en_US_new.dat that you can get at http://lingucomponent.openoffice.org/MyThes-1.zip
+node-thesaurus expects a th_en_US_new.dat that you can get at http://lingucomponent.openoffice.org/MyThes-1.zip
 
+#### Download and extract oneliner (with curl and unzip)
+	$ curl http://www.openoffice.org/lingucomponent/MyThes-1.zip --output MyThes-1.zip && unzip -j "MyThes-1.zip" "MyThes-1.0/th_en_US_new.dat" && rm MyThes-1.zip
+
+#### Import thesaurus file into note-thesaurus
 ```Javascript
 var thesaurus = require("thesaurus");
 
